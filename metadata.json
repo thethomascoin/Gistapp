@@ -1,0 +1,5 @@
+{
+  "name": "Gist",
+  "description": "An AI-powered content distiller and universal library to combat information overload. It provides a daily summary of your important content and a searchable library for everything you save.",
+  "requestFramePermissions": []
+}
