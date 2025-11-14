@@ -2,22 +2,21 @@
   "name": "gist",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://thethomascoin.github.io/Gistapp", // <-- ADD THIS
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build", // <-- ADD THIS
+    "preview": "vite preview",
+    "predeploy": "npm run build", // <-- ADD THIS
+    "deploy": "gh-pages -d dist" // <-- ADD THIS
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "@google/genai": "^1.29.1",
-    "react-dom": "^19.2.0",
-    "lucide-react": "^0.553.0"
+    // ... your dependencies
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1", // <-- this will be here
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0" // <-- this will be here
   }
 }
